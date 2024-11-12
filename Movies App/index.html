@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>Movies App</h1>
+    <div class="input-container">
+      <div class="left-inpute">
+        <input type="text" id="search" placeholder="Search for a movie...">
+        <div id="autocomplete_results" class="autocomplete-results"></div>
+        <button class="search_btn" id="searchButton">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="right-inpute">
+        <select id="sort" onchange="sortMovies()">
+          <option value="popularity.desc">Sort by Popularity</option>
+          <option value="release_date.desc">Sort by Release Date</option>
+          <option value="vote_average.desc">Sort by Rating</option>
+        </select>
+        <a class="favorite_btn" href="watchlist.html" title="watchlist">
+            <i class="fas fa-star"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="movieGrid"></main>
+
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div id="movieDetails"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

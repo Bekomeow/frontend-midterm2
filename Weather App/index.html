@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div class="search-section">
+        <div class="search-input">
+          <div class="input-container">
+            <input type="text" id="city-input" placeholder="Search for places...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+          </div>
+          
+          <button id="units-button">°F</button>
+        </div>
+        <div class="search-buttons">
+          <button id="location-button"><i class="fas fa-map-marker-alt"></i>    search by my location</button>
+        </div>
+      </div>
+      <div class="current-weather">
+        <img class="weather-icon"></img>
+        <p class="temperature" id="temperature">-°C</p>
+        <div class="weather-info">
+          <p class="location">-</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="right-section">
+      <div class="forecast-section">
+        <div class="forecast">
+          <div class="day" id="day1">undefined<br>-°-°</div>
+          <div class="day" id="day2">undefined<br>-°-°</div>
+          <div class="day" id="day3">undefined<br>-°-°</div>
+          <div class="day" id="day4">undefined<br>-°-°</div>
+          <div class="day" id="day5">undefined<br>-°-°</div>
+        </div>
+      </div>
+
+      <h3 class="highlights-title">Today's Highlights</h3>
+      <div class="highlights">
+        <div class="highlight">
+          <h3>Temperature</h3>
+          <p id="temp">-</p>
+        </div>
+        <div class="highlight">
+          <h3>Feels Like</h3>
+          <p id="feels-like">-</p>
+        </div>
+        <div class="highlight">
+          <h3>Description</h3>
+          <p id="description">-</p>
+        </div>
+        <div class="highlight">
+          <h3>Humidity</h3>
+          <p id="humidity">-</p>
+        </div>
+        <div class="highlight">
+          <h3>Wind Speed</h3>
+          <p id="wind">-</p>
+        </div>
+        <div class="highlight">
+          <h3>Sunrise & Sunset</h3>
+          <p id="sunrise-sunset">-</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
